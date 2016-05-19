@@ -12,10 +12,11 @@
 #import <UIKit/UIKit.h>
 #import "UIView+ZHYExtension.h"
 #import "UIColor+ZHYExtension.h"
+#import "UIBarButtonItem+ZHYExtension.h"
 
 #ifdef DEBUG
 #define ZHYLog(...) NSLog(__VA_ARGS__)
-#define ZHYLogFunc KMLog(@"%s",__func__)
+#define ZHYLogFunc ZHYLog(@"%s",__func__)
 #else
 #define ZHYLog(...)
 #define ZHYLogFunc
@@ -30,7 +31,7 @@
 #define ZHYScreenW ZHYScreenBounds.size.width
 #define ZHYScreenH ZHYScreenBounds.size.height
 
-
+// 颜色相关
 #define kARGBColor(a, r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 #define kRGBColor(r, g, b) kARGBColor(255, (r), (g), (b))
 #define kGrayColor(v) kRGBColor((v), (v), (v))
