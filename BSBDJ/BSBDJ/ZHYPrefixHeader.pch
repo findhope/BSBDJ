@@ -1,0 +1,45 @@
+//
+//  ZHYPrefixHeader.pch
+//  BSBDJ
+//
+//  Created by MitnickKevin on 16/5/19.
+//  Copyright © 2016年 SWUST. All rights reserved.
+//
+
+#ifndef ZHYPrefixHeader_pch
+#define ZHYPrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import "UIView+ZHYExtension.h"
+#import "UIColor+ZHYExtension.h"
+
+#ifdef DEBUG
+#define ZHYLog(...) NSLog(__VA_ARGS__)
+#define ZHYLogFunc KMLog(@"%s",__func__)
+#else
+#define ZHYLog(...)
+#define ZHYLogFunc
+#endif
+
+// block弱引用
+#define ZHYWeakSelf __weak typeof(self) weakSelf = self;
+// 取得当前主窗口
+#define ZHYKeyWindow [UIApplication sharedApplication].keyWindow
+// 当前屏幕尺寸相关
+#define ZHYScreenBounds [UIScreen mainScreen].bounds
+#define ZHYScreenW ZHYScreenBounds.size.width
+#define ZHYScreenH ZHYScreenBounds.size.height
+
+
+#define kARGBColor(a, r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define kRGBColor(r, g, b) kARGBColor(255, (r), (g), (b))
+#define kGrayColor(v) kRGBColor((v), (v), (v))
+#define kCommonBgColor kGrayColor(215)
+#define kRandomColor kARGBColor(0.6, arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+// 标签的背景颜色
+#define XMGTagBgColor XMGColor(70, 142, 243)
+
+// 将数据写到桌面的plist
+#define ZHYWriteToPlist(data, filename) [data writeToFile:[NSString stringWithFormat:@"/Users/Kevin/Desktop/%@.plist", filename] atomically:YES];
+
+#endif /* ZHYPrefixHeader_pch */
