@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class ZHYTagsModel;
+
 @interface ZHYTagCell : UITableViewCell
+
+/** 标签模型 */
+@property (strong, nonatomic) ZHYTagsModel *tagModel;
 
 @end

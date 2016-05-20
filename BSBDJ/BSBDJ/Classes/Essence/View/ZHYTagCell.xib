@@ -15,20 +15,20 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UWt-gG-DuW">
-                        <rect key="frame" x="20" y="46" width="50" height="50"/>
+                        <rect key="frame" x="20" y="44" width="55" height="55"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="50" id="2Eu-Rr-fwB"/>
-                            <constraint firstAttribute="height" constant="50" id="c4i-gd-Jxv"/>
+                            <constraint firstAttribute="width" constant="55" id="2Eu-Rr-fwB"/>
+                            <constraint firstAttribute="height" constant="55" id="c4i-gd-Jxv"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxF-Iv-13H">
-                        <rect key="frame" x="90" y="46" width="40" height="20"/>
+                        <rect key="frame" x="95" y="44" width="40" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7b-8I-S0v">
-                        <rect key="frame" x="90" y="79" width="36" height="17"/>
+                        <rect key="frame" x="95" y="82" width="36" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -55,7 +55,12 @@
                     <constraint firstItem="MxF-Iv-13H" firstAttribute="leading" secondItem="UWt-gG-DuW" secondAttribute="trailing" constant="20" id="mlo-B9-i4C"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="482" y="556"/>
+            <connections>
+                <outlet property="imageList" destination="UWt-gG-DuW" id="B5S-4C-UgH"/>
+                <outlet property="subNumber" destination="g7b-8I-S0v" id="936-YQ-6AF"/>
+                <outlet property="themeName" destination="MxF-Iv-13H" id="6J6-DX-ri7"/>
+            </connections>
+            <point key="canvasLocation" x="271" y="368"/>
         </tableViewCell>
     </objects>
     <resources>
