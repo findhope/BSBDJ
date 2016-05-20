@@ -33,7 +33,6 @@
 - (void)navLeftButtonClick {
 
     ZHYTagController *tagVc = [[ZHYTagController alloc] init];
-    tagVc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:tagVc animated:YES];
     
 }

@@ -7,6 +7,7 @@
 //
 
 #import "ZHYTagController.h"
+#import "ZHYTagCell.h"
 
 @interface ZHYTagController ()
 
@@ -16,31 +17,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    [self setupController];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+- (void)setupController{
 
+    self.navigationItem.title = @"推荐标签";
+    self.view.backgroundColor = kCommonBgColor;
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([ZHYTagCell class]) bundle:nil] forCellReuseIdentifier:@"ZHY_TAGCELL"];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.rowHeight = 70;
+
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return 20;
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    ZHYTagCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ZHY_TAGCELL"];
+    
+    return cell;
 
+}
 
 @end
