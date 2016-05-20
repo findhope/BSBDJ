@@ -32,6 +32,9 @@
 		0A3EE07A1CEEC9EF00E86910 /* ZHYTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3EE0781CEEC9EF00E86910 /* ZHYTagCell.m */; };
 		0A3EE07B1CEEC9EF00E86910 /* ZHYTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3EE0791CEEC9EF00E86910 /* ZHYTagCell.xib */; };
 		0A3EE07E1CEED9FA00E86910 /* ZHYTagsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3EE07D1CEED9FA00E86910 /* ZHYTagsModel.m */; };
+		0A3EE0841CEEF86400E86910 /* UIImage+ZHYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3EE0831CEEF86400E86910 /* UIImage+ZHYExtension.m */; };
+		0AD967511CEF0F9600AE3A79 /* UIImageView+ZHYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD967501CEF0F9600AE3A79 /* UIImageView+ZHYExtension.m */; };
+		0AD967541CEF17D100AE3A79 /* ZHYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD967531CEF17D100AE3A79 /* ZHYConst.m */; };
 		1EA4141E9BFD12DCDF81F744 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F76737071F5D53F43E3037BB /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +87,12 @@
 		0A3EE0791CEEC9EF00E86910 /* ZHYTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHYTagCell.xib; sourceTree = "<group>"; };
 		0A3EE07C1CEED9FA00E86910 /* ZHYTagsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYTagsModel.h; sourceTree = "<group>"; };
 		0A3EE07D1CEED9FA00E86910 /* ZHYTagsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYTagsModel.m; sourceTree = "<group>"; };
+		0A3EE0821CEEF86400E86910 /* UIImage+ZHYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZHYExtension.h"; sourceTree = "<group>"; };
+		0A3EE0831CEEF86400E86910 /* UIImage+ZHYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZHYExtension.m"; sourceTree = "<group>"; };
+		0AD9674F1CEF0F9600AE3A79 /* UIImageView+ZHYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ZHYExtension.h"; sourceTree = "<group>"; };
+		0AD967501CEF0F9600AE3A79 /* UIImageView+ZHYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ZHYExtension.m"; sourceTree = "<group>"; };
+		0AD967521CEF17D100AE3A79 /* ZHYConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYConst.h; sourceTree = "<group>"; };
+		0AD967531CEF17D100AE3A79 /* ZHYConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYConst.m; sourceTree = "<group>"; };
 		5DBF864017BCED00FD80353F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E0385FFD31C88DCDCFA44B1F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F76737071F5D53F43E3037BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -385,6 +394,12 @@
 				0A3EE0411CEDB23E00E86910 /* UIView+ZHYExtension.m */,
 				0A3EE0641CEDD39100E86910 /* UIBarButtonItem+ZHYExtension.h */,
 				0A3EE0651CEDD39100E86910 /* UIBarButtonItem+ZHYExtension.m */,
+				0A3EE0821CEEF86400E86910 /* UIImage+ZHYExtension.h */,
+				0A3EE0831CEEF86400E86910 /* UIImage+ZHYExtension.m */,
+				0AD9674F1CEF0F9600AE3A79 /* UIImageView+ZHYExtension.h */,
+				0AD967501CEF0F9600AE3A79 /* UIImageView+ZHYExtension.m */,
+				0AD967521CEF17D100AE3A79 /* ZHYConst.h */,
+				0AD967531CEF17D100AE3A79 /* ZHYConst.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -542,15 +557,18 @@
 				0A3EE04E1CEDC08F00E86910 /* ZHYFriendTrendsController.m in Sources */,
 				0A3EE04B1CEDC06B00E86910 /* ZHYEssenceController.m in Sources */,
 				0A3EE0761CEEB8A600E86910 /* ZHYTextField.m in Sources */,
+				0AD967511CEF0F9600AE3A79 /* UIImageView+ZHYExtension.m in Sources */,
 				0A3EE0661CEDD39100E86910 /* UIBarButtonItem+ZHYExtension.m in Sources */,
 				0A3EE00D1CEDAE5000E86910 /* main.m in Sources */,
 				0A3EE07A1CEEC9EF00E86910 /* ZHYTagCell.m in Sources */,
+				0A3EE0841CEEF86400E86910 /* UIImage+ZHYExtension.m in Sources */,
 				0A3EE0511CEDC10800E86910 /* ZHYMeController.m in Sources */,
 				0A3EE05D1CEDC21400E86910 /* ZHYSettingTableController.m in Sources */,
 				0A3EE0601CEDC24600E86910 /* ZHYTabbar.m in Sources */,
 				0A3EE06F1CEE281900E86910 /* ZHYLoginRegisterController.m in Sources */,
 				0A3EE0731CEEAF1A00E86910 /* ZHYQuickLoginButton.m in Sources */,
 				0A3EE07E1CEED9FA00E86910 /* ZHYTagsModel.m in Sources */,
+				0AD967541CEF17D100AE3A79 /* ZHYConst.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

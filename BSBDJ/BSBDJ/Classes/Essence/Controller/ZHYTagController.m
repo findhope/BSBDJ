@@ -25,6 +25,9 @@
 
 @implementation ZHYTagController
 
+/** cell的循环利用标识 */
+static NSString * const ZHYTagCellID = @"ZHY_TAGCELL";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -46,7 +49,7 @@
 
     self.navigationItem.title = @"推荐标签";
     self.view.backgroundColor = kCommonBgColor;
-    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([ZHYTagCell class]) bundle:nil] forCellReuseIdentifier:@"ZHY_TAGCELL"];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([ZHYTagCell class]) bundle:nil] forCellReuseIdentifier:ZHYTagCellID];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.rowHeight = 70;
 }
@@ -62,7 +65,7 @@
     params[@"limit"] = @"50";
     
     ZHYWeakSelf;
-    [self.manger GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.manger GET:ZHYRequestURL parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (responseObject == nil) {
             
             [SVProgressHUD showErrorWithStatus:@"加载标签数据失败"];
@@ -107,7 +110,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    ZHYTagCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ZHY_TAGCELL"];
+    ZHYTagCell * cell = [tableView dequeueReusableCellWithIdentifier:ZHYTagCellID];
     
     cell.tagModel = self.tags[indexPath.row];
     

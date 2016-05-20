@@ -25,7 +25,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -36,7 +36,7 @@
 - (void)setTagModel:(ZHYTagsModel *)tagModel {
 
     _tagModel = tagModel;
-    [self.imageList sd_setImageWithURL:[NSURL URLWithString:tagModel.image_list] placeholderImage:[UIImage imageNamed:@"defaultTagIcon"]];
+    [self.imageList setHeaderWithPlaceholderImage:[UIImage imageNamed:@"defaultTagIcon"] CornerRadius:20 url:tagModel.image_list];
     self.themeName.text = tagModel.theme_name;
     if (tagModel.sub_number >= 10000) {
         self.subNumber.text = [NSString stringWithFormat:@"%.1f万人订阅", tagModel.sub_number/10000.0];
@@ -44,14 +44,10 @@
     
         self.subNumber.text = [NSString stringWithFormat:@"%zd人订阅" ,tagModel.sub_number];
     }
-    
-
 }
 
 - (void)setFrame:(CGRect)frame{
-
     frame.size.height -= 1;
-
     [super setFrame:frame];
 }
 

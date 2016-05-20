@@ -10,9 +10,12 @@
 #define ZHYPrefixHeader_pch
 
 #import <UIKit/UIKit.h>
+#import "ZHYConst.h"
 #import "UIView+ZHYExtension.h"
 #import "UIColor+ZHYExtension.h"
 #import "UIBarButtonItem+ZHYExtension.h"
+#import "UIImage+ZHYExtension.h"
+#import "UIImageView+ZHYExtension.h"
 
 #ifdef DEBUG
 #define ZHYLog(...) NSLog(__VA_ARGS__)
