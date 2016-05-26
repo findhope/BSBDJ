@@ -49,7 +49,7 @@ static NSString * const ZHYMeCellID = @"ZHYME_CELL";
 
 - (void)settingButtonClick {
     
-    ZHYSettingTableController * settingVc = [[ZHYSettingTableController alloc] init];
+    ZHYSettingTableController * settingVc = [[ZHYSettingTableController alloc] initWithStyle:UITableViewStyleGrouped];
     [self.navigationController pushViewController:settingVc animated:YES];
 }
 

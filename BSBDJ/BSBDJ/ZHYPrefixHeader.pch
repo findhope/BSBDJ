@@ -16,6 +16,7 @@
 #import "UIBarButtonItem+ZHYExtension.h"
 #import "UIImage+ZHYExtension.h"
 #import "UIImageView+ZHYExtension.h"
+#import "NSString+ZHYExtensiton.h"
 
 #ifdef DEBUG
 #define ZHYLog(...) NSLog(__VA_ARGS__)
@@ -45,5 +46,8 @@
 
 // 将数据写到桌面的plist
 #define ZHYWriteToPlist(data, filename) [data writeToFile:[NSString stringWithFormat:@"/Users/Kevin/Desktop/%@.plist", filename] atomically:YES];
+
+/** 缓存路径 */
+#define ZHYCacheFile [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:@"default"]
 
 #endif /* ZHYPrefixHeader_pch */

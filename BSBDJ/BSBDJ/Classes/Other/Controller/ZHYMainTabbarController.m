@@ -31,10 +31,10 @@
 
 - (void)setupChildViewControllers {
 
-    [self setupChildVc:[[ZHYMeController alloc] initWithStyle:UITableViewStyleGrouped] image:@"tabBar_me_icon" selectImage:@"tabBar_me_click_icon" title:@"我"];
     [self setupChildVc:[[ZHYEssenceController alloc] init] image:@"tabBar_essence_icon" selectImage:@"tabBar_essence_click_icon" title:@"精华"];
     [self setupChildVc:[[ZHYNewViewController alloc] init] image:@"tabBar_new_icon" selectImage:@"tabBar_new_click_icon" title:@"新帖"];
     [self setupChildVc:[[ZHYFriendTrendsController alloc] init] image:@"tabBar_friendTrends_icon" selectImage:@"tabBar_friendTrends_click_icon" title:@"关注"];
+    [self setupChildVc:[[ZHYMeController alloc] initWithStyle:UITableViewStyleGrouped] image:@"tabBar_me_icon" selectImage:@"tabBar_me_click_icon" title:@"我"];
     
 }
 

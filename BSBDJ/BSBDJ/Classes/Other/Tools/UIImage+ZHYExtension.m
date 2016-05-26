@@ -28,6 +28,7 @@
     UIImage * circleImage = UIGraphicsGetImageFromCurrentImageContext();
     // 关闭图形上下文
     UIGraphicsEndImageContext();
+    
     return circleImage;
 }
 

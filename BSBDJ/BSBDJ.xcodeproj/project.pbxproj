@@ -35,6 +35,10 @@
 		0A3EE0841CEEF86400E86910 /* UIImage+ZHYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3EE0831CEEF86400E86910 /* UIImage+ZHYExtension.m */; };
 		0A85B1DE1CF24FAB0057E59C /* ZHYMeWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A85B1DC1CF24FAB0057E59C /* ZHYMeWebController.m */; };
 		0A85B1DF1CF24FAB0057E59C /* ZHYMeWebController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A85B1DD1CF24FAB0057E59C /* ZHYMeWebController.xib */; };
+		0A85B1E51CF2CEB40057E59C /* NSString+ZHYExtensiton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A85B1E41CF2CEB40057E59C /* NSString+ZHYExtensiton.m */; };
+		0A85B1E81CF2D9670057E59C /* ZHYCacheClearCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A85B1E71CF2D9670057E59C /* ZHYCacheClearCell.m */; };
+		0A85B1EC1CF2E7A80057E59C /* ZHYPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A85B1EB1CF2E7A80057E59C /* ZHYPublishViewController.xib */; };
+		0A85B1EF1CF2EE980057E59C /* ZHYPublishButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A85B1EE1CF2EE980057E59C /* ZHYPublishButton.m */; };
 		0AA18FC01CEF88070040746B /* ZHYMeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA18FBF1CEF88070040746B /* ZHYMeTableCell.m */; };
 		0AA18FC31CEF92530040746B /* ZHYMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA18FC21CEF92530040746B /* ZHYMeFooterView.m */; };
 		0AA18FC91CEF96F90040746B /* ZHYMeSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA18FC81CEF96F90040746B /* ZHYMeSquare.m */; };
@@ -98,6 +102,13 @@
 		0A85B1DB1CF24FAB0057E59C /* ZHYMeWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYMeWebController.h; sourceTree = "<group>"; };
 		0A85B1DC1CF24FAB0057E59C /* ZHYMeWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYMeWebController.m; sourceTree = "<group>"; };
 		0A85B1DD1CF24FAB0057E59C /* ZHYMeWebController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHYMeWebController.xib; sourceTree = "<group>"; };
+		0A85B1E31CF2CEB40057E59C /* NSString+ZHYExtensiton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZHYExtensiton.h"; sourceTree = "<group>"; };
+		0A85B1E41CF2CEB40057E59C /* NSString+ZHYExtensiton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZHYExtensiton.m"; sourceTree = "<group>"; };
+		0A85B1E61CF2D9670057E59C /* ZHYCacheClearCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYCacheClearCell.h; sourceTree = "<group>"; };
+		0A85B1E71CF2D9670057E59C /* ZHYCacheClearCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYCacheClearCell.m; sourceTree = "<group>"; };
+		0A85B1EB1CF2E7A80057E59C /* ZHYPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHYPublishViewController.xib; sourceTree = "<group>"; };
+		0A85B1ED1CF2EE980057E59C /* ZHYPublishButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYPublishButton.h; sourceTree = "<group>"; };
+		0A85B1EE1CF2EE980057E59C /* ZHYPublishButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYPublishButton.m; sourceTree = "<group>"; };
 		0AA18FBE1CEF88070040746B /* ZHYMeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYMeTableCell.h; sourceTree = "<group>"; };
 		0AA18FBF1CEF88070040746B /* ZHYMeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHYMeTableCell.m; sourceTree = "<group>"; };
 		0AA18FC11CEF92530040746B /* ZHYMeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHYMeFooterView.h; sourceTree = "<group>"; };
@@ -303,6 +314,8 @@
 				0AA18FC21CEF92530040746B /* ZHYMeFooterView.m */,
 				0AF68D491CF00D260051FE99 /* ZHYSquareButton.h */,
 				0AF68D4A1CF00D260051FE99 /* ZHYSquareButton.m */,
+				0A85B1E61CF2D9670057E59C /* ZHYCacheClearCell.h */,
+				0A85B1E71CF2D9670057E59C /* ZHYCacheClearCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -393,6 +406,7 @@
 			children = (
 				0A3EE0551CEDC16700E86910 /* ZHYPublishViewController.h */,
 				0A3EE0561CEDC16700E86910 /* ZHYPublishViewController.m */,
+				0A85B1EB1CF2E7A80057E59C /* ZHYPublishViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -407,6 +421,8 @@
 		0A3EE03A1CEDB17F00E86910 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0A85B1ED1CF2EE980057E59C /* ZHYPublishButton.h */,
+				0A85B1EE1CF2EE980057E59C /* ZHYPublishButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -426,6 +442,8 @@
 				0A3EE0831CEEF86400E86910 /* UIImage+ZHYExtension.m */,
 				0AD9674F1CEF0F9600AE3A79 /* UIImageView+ZHYExtension.h */,
 				0AD967501CEF0F9600AE3A79 /* UIImageView+ZHYExtension.m */,
+				0A85B1E31CF2CEB40057E59C /* NSString+ZHYExtensiton.h */,
+				0A85B1E41CF2CEB40057E59C /* NSString+ZHYExtensiton.m */,
 				0AD967521CEF17D100AE3A79 /* ZHYConst.h */,
 				0AD967531CEF17D100AE3A79 /* ZHYConst.m */,
 			);
@@ -511,6 +529,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A85B1EC1CF2E7A80057E59C /* ZHYPublishViewController.xib in Resources */,
 				0A3EE0181CEDAE5000E86910 /* Assets.xcassets in Resources */,
 				0A3EE06B1CEE1BF500E86910 /* ZHYFriendTrendsController.xib in Resources */,
 				0A3EE07B1CEEC9EF00E86910 /* ZHYTagCell.xib in Resources */,
@@ -587,6 +606,7 @@
 				0A3EE04E1CEDC08F00E86910 /* ZHYFriendTrendsController.m in Sources */,
 				0A3EE04B1CEDC06B00E86910 /* ZHYEssenceController.m in Sources */,
 				0A3EE0761CEEB8A600E86910 /* ZHYTextField.m in Sources */,
+				0A85B1E81CF2D9670057E59C /* ZHYCacheClearCell.m in Sources */,
 				0AD967511CEF0F9600AE3A79 /* UIImageView+ZHYExtension.m in Sources */,
 				0A3EE0661CEDD39100E86910 /* UIBarButtonItem+ZHYExtension.m in Sources */,
 				0AA18FC01CEF88070040746B /* ZHYMeTableCell.m in Sources */,
@@ -597,8 +617,10 @@
 				0A3EE0841CEEF86400E86910 /* UIImage+ZHYExtension.m in Sources */,
 				0A3EE0511CEDC10800E86910 /* ZHYMeController.m in Sources */,
 				0A3EE05D1CEDC21400E86910 /* ZHYSettingTableController.m in Sources */,
+				0A85B1E51CF2CEB40057E59C /* NSString+ZHYExtensiton.m in Sources */,
 				0A3EE0601CEDC24600E86910 /* ZHYTabbar.m in Sources */,
 				0AA18FC31CEF92530040746B /* ZHYMeFooterView.m in Sources */,
+				0A85B1EF1CF2EE980057E59C /* ZHYPublishButton.m in Sources */,
 				0A3EE06F1CEE281900E86910 /* ZHYLoginRegisterController.m in Sources */,
 				0A3EE0731CEEAF1A00E86910 /* ZHYQuickLoginButton.m in Sources */,
 				0A3EE07E1CEED9FA00E86910 /* ZHYTagsModel.m in Sources */,

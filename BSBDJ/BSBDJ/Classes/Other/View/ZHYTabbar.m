@@ -7,6 +7,7 @@
 //
 
 #import "ZHYTabbar.h"
+#import "ZHYPublishViewController.h"
 
 @interface ZHYTabbar ()
 
@@ -37,8 +38,10 @@
 }
 
 - (void)publishButtonClick {
-
-    ZHYLogFunc;
+    ZHYPublishViewController *publishVc = [[ZHYPublishViewController alloc] init];
+    [self.window.rootViewController presentViewController:publishVc animated:YES completion:^{
+        
+    }];
 }
 
 - (void)layoutSubviews {
